@@ -1,0 +1,18 @@
+Source: istioctl
+Section: net
+Priority: optional
+Maintainer: Luca Toscano <ltoscano@wikimedia.org>
+Build-Depends: debhelper (>= 12), wget, ca-certificates
+Standards-Version: 4.5.0
+Homepage: https://istio.io/
+
+Package: istioctl
+Architecture: linux-any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Istio client binary (istioctl)
+ Istio extends Kubernetes to establish a programmable, application-aware network
+ using the powerful Envoy service proxy. Working with both Kubernetes and
+ traditional workloads, Istio brings standard, universal traffic management,
+ telemetry, and security to complex deployments.
+ .
+ Currently this package only ships the istioctl binary.

@@ -1,0 +1,5 @@
+istioctl (1.6.14-1) wikimedia-buster; urgency=medium
+
+  * Initial release of istioctl.
+
+ -- Luca Toscano <ltoscano@wikimedia.org>  Tue, 15 Jun 2021 11:02:17 +0100

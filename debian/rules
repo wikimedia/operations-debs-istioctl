@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+# The script can take one or more releases as argument.
+# The format is "x.y.z x1.y1.z1 ..."
+override_dh_auto_build:
+	./debian/get-istioctl-releases.sh "1.6.14"
