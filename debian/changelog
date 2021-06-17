@@ -1,4 +1,4 @@
-istioctl (1.6.14-1) wikimedia-buster; urgency=medium
+istioctl (1.6.14-1) buster-wikimedia; urgency=medium
 
   * Initial release of istioctl.
 
