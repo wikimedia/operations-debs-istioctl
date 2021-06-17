@@ -11,3 +11,6 @@ export DH_VERBOSE = 1
 # The format is "x.y.z x1.y1.z1 ..."
 override_dh_auto_build:
 	./debian/get-istioctl-releases.sh "1.6.14"
+
+# Skip dwz since the istioctl binaries don't have any debug info.
+override_dh_dwz:
